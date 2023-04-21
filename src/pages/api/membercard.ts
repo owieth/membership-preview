@@ -1,6 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-import fs from 'fs'
-import path from 'path'
+import type { NextApiRequest } from 'next'
 
 type ResponseData = {
   message: string
@@ -10,10 +8,12 @@ export default function handler(
   req: NextApiRequest,
   res: any
 ) {
-  // res.status(200).json({ message: 'Hello from Next.js!' })
-  const filePath = path.resolve('public/membercard.svg');
-  const imageBuffer = fs.readFileSync(filePath);
+  const image = `<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  </svg>`
+  var url = "data:image/svg+xml;base64," + Buffer.from(image, "utf-8").toString("base64")
 
   res.setHeader('Content-Type', 'image/svg+xml');
-  res.send(imageBuffer);
+  res.setHeader('Content-Disposition', 'attachment');
+  res.send(url);
 }
