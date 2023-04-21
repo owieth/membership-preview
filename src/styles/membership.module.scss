@@ -5,7 +5,6 @@
   width: 350px;
   height: 220px;
   perspective: 1000px;
-  border-radius: 12px;
   background-color: transparent;
   
   &:hover .cardInner {
@@ -27,6 +26,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 12px;
 }
 
 .front {

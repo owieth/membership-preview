@@ -5,7 +5,8 @@
       const url = new URL(document.URL);
       const searchParams = url.searchParams;
       
-      document.getElementById("id").textContent = searchParams.get('holder');
+      <!-- document.getElementById("id").textContent = searchParams.get('holder'); -->
+      document.getElementById("id").textContent = url;
     }
   </script>
 
