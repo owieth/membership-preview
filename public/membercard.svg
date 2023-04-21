@@ -1,13 +1,13 @@
 <svg width="349" height="212" viewBox="0 0 349 212" fill="none" xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
+  xmlns:xlink="http://www.w3.org/1999/xlink" onload="onLoad()">
   <script>
-    window.onload = () => {
-      const url = new URL(document.URL);
-      const searchParams = url.searchParams;
+    function onLoad() {
+      //const url = new URL(document.URL);
+      //const searchParams = url.searchParams;
       
-      <!-- document.getElementById("id").textContent = searchParams.get('holder'); -->
+      //document.getElementById("id").textContent = searchParams.get('holder');
       document.getElementById("id").textContent = "set value in script tag";
-  }
+    }
   </script>
 
   <g clip-path="url(#clip0_537_604)">
