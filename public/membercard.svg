@@ -6,8 +6,9 @@
       const searchParams = url.searchParams;
       
       <!-- document.getElementById("id").textContent = searchParams.get('holder'); -->
-      document.getElementById("id").textContent = url;
-    }
+      document.getElementById("id").textContent = "set value in 
+  </script>";
+  }
   </script>
 
   <g clip-path="url(#clip0_537_604)">
