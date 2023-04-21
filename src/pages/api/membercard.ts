@@ -13,7 +13,7 @@ export default function handler(
   </svg>`
   var url = "data:image/svg+xml;base64," + Buffer.from(image, "utf-8").toString("base64")
 
-  res.setHeader('Content-Type', 'image/svg+xml');
-  res.setHeader('Content-Disposition', 'attachment');
+  //res.setHeader('Content-Type', 'image/svg+xml');
+  //res.setHeader('Content-Disposition', 'attachment');
   res.send(url);
 }
