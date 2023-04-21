@@ -9,8 +9,10 @@ export default function Membership() {
   return (
     <motion.div
       className={styles.card}
-      whileHover={{ scale: 1.2, rotateY: 180 }}
-      animate={{ transition: { duration: 3 } }}
+      whileHover={{ rotateY: 180 }}
+      transition={{
+        rotateY: { duration: 0.5, delay: 0.25, }
+      }}
     >
       <h3 className={styles.address}>{id}</h3>
     </motion.div >
