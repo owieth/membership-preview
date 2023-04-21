@@ -6,8 +6,7 @@
       const searchParams = url.searchParams;
       
       <!-- document.getElementById("id").textContent = searchParams.get('holder'); -->
-      document.getElementById("id").textContent = "set value in 
-  </script>";
+      document.getElementById("id").textContent = "set value in script tag";
   }
   </script>
 
