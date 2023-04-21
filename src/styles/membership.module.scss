@@ -29,19 +29,6 @@
   border-radius: 12px;
 }
 
-.front {
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-}
-
 .back {
-  background: linear-gradient(90deg, #73de3d 0%, #92FE9D 100%);
   transform: rotateY(180deg);
-}
-
-.address {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
